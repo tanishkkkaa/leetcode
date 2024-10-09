@@ -1,24 +1,38 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
-        HashMap<Integer, Integer> prefixSum = new HashMap<>();
+        int[] prefixSum = new int[nums.length];
         int sum = 0;
         int count = 0;
 
-        // Add an initial entry for sum = 0
-        prefixSum.put(0, 1);
+        //     {-2, 1, 2, -2, 5, -2, 1}
+        //p s: {-2, -1, 1, -1, 4, 2, 3 }
+        // prefixSum[j] - k = prefixSum[0, i-1]
+        // This will store the prefixsum in the corresponding arrays
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i< nums.length; i++) {
             sum += nums[i];
-
-            // Check if sum - k has occurred before
-            if (prefixSum.containsKey(sum - k)) {
-                count += prefixSum.get(sum - k);  // Add the frequency of sum - k
-            }
-
-            // Add the current sum to the map (or update its frequency)
-            prefixSum.put(sum, prefixSum.getOrDefault(sum, 0) + 1);
+            prefixSum[i] = sum;
         }
 
+        for (int j=0; j< prefixSum.length; j++) {
+            // Need to calculate from i-1            
+            if (prefixSum[j] == k) {
+                count++;
+                //System.out.println("count-1:"+ count);
+            }
+        }
+
+        for (int j=1; j<prefixSum.length; j++) {  
+            //System.out.println("prefixSum[j]: "+ prefixSum[j] + " k:" + k);          
+            int diff = prefixSum[j] - k; 
+            for(int i=1; i<=j; i++) {                               
+                //System.out.println("prefixSum[j]-k: "+diff + " prefixSum[i-1]: " + prefixSum[i-1]);
+                if (diff == prefixSum[i-1]) {
+                    count++;
+                }
+                //System.out.println("count-2:"+ count);
+            }
+        }        
         return count;
     }
 }
