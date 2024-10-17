@@ -10,7 +10,7 @@ class Solution {
             int mid = (low + high) / 2;
             long value = 0;
             for (int i = 0; i < piles.length; i++) {
-                value += (long) Math.ceil((double) piles[i] / mid);
+                value += (piles[i] + mid - 1) / mid;
             }
             if (value <= h) {
                 high = mid - 1;
