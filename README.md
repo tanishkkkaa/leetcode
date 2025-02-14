@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/tanishkkkaa/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0018-4sum](https://github.com/tanishkkkaa/leetcode/tree/master/0018-4sum) |
 | [0560-subarray-sum-equals-k](https://github.com/tanishkkkaa/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0907-koko-eating-bananas](https://github.com/tanishkkkaa/leetcode/tree/master/0907-koko-eating-bananas) |
@@ -13,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/tanishkkkaa/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0907-koko-eating-bananas](https://github.com/tanishkkkaa/leetcode/tree/master/0907-koko-eating-bananas) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/tanishkkkaa/leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1646-kth-missing-positive-number](https://github.com/tanishkkkaa/leetcode/tree/master/1646-kth-missing-positive-number) |
@@ -44,4 +46,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0812-rotate-string](https://github.com/tanishkkkaa/leetcode/tree/master/0812-rotate-string) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/tanishkkkaa/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 <!---LeetCode Topics End-->
